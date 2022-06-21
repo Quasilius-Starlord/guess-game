@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#82EDDC"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".GameModeActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="344dp"
+        android:layout_height="122dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40pt"
+        android:gravity="center|center_horizontal"
+        android:padding="20dp"
+        android:text="@string/introQuestion"
+        android:textAlignment="center"
+        android:textColor="#150E0E"
+        android:textFontWeight="400"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/difficulty"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:clipToPadding="false">
+
+        <RadioButton
+            android:id="@+id/difficultyOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:buttonTint="#130F0F"
+            android:foregroundTint="#201515"
+            android:text="Easy"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/difficultyTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:buttonTint="#130F0F"
+            android:foregroundTint="#201515"
+            android:text="Medium"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/difficultyThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:buttonTint="#130F0F"
+            android:foregroundTint="#201515"
+            android:text="Hard"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startGame"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Start Game"
+        android:textSize="20sp" />
+
+</LinearLayout>
